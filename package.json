@@ -1,6 +1,6 @@
 {
   "name": "@silberistgold/aws-cdk-ses-domain-identity",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Constructs for provisioning and referencing domain identities which can be used in SES RuleSets and Actions Construct.",
   "main": "dist/dns-validated-domain-identity.js",
   "types": "dist/dns-validated-domain-identity.d.ts",
@@ -29,7 +29,8 @@
     "build": "tsc -p tsconfig.json",
     "prepublishOnly": "npm run build && cd lambda-packages/dns-validated-domain-identity-handler && npm run build",
     "test": "jest",
-    "lint": "tslint -c tslint.json '{src,test}/**/*.ts'"
+    "lint": "tslint -c tslint.json '{src,test}/**/*.ts'",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
